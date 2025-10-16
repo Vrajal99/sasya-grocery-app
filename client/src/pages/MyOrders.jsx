@@ -10,7 +10,9 @@ const MyOrders = () => {
     setMyOrders(dummyOrders);
   };
 
-  useEffect(() => fetchMyOrders(), []);
+  useEffect(() => {
+    fetchMyOrders();
+  }, []);
 
   return (
     <div className="mt-16 pb-16">
