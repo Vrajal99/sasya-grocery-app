@@ -1,0 +1,95 @@
+# Node modules
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+logs/
+
+# Runtime data
+pids/
+*.pid
+*.seed
+
+# Build outputs
+dist/
+build/
+.out/
+.serverless/
+
+# Vite / bundler cache
+.vite/
+.cache/
+.parcel-cache/
+
+# Environment files
+.env
+.env.*
+client/.env
+server/.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Dependency locks (if you want to ignore lockfiles, otherwise remove)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Coverage
+coverage/
+
+# Misc
+*.tgz
+*.local
+
+# Optional: ignore build artifacts for front-end frameworks
+/dist/
+/.next/
+/.nuxt/
+
+# Ignore environment-specific files used by Windows
+ehthumbs.db
+Desktop.ini
+
+# Ignore system files sometimes created by editors
+*.swp
+*.swo
+
+# Ignore generated assets
+assets/**/*.map
+
+# Frontend build outputs (Vite / CRA)
+client/dist/
+client/build/
+
+# Server build outputs
+server/dist/
+server/build/
+
+# Local DB / uploads
+data/
+uploads/
+
+# Environment locals
+.env.local
+
+# NOTE: Lockfiles (package-lock.json, yarn.lock, pnpm-lock.yaml) are usually
+# recommended to be tracked to ensure reproducible installs. Do NOT ignore them
+# unless you have a specific reason.
+
+# End of .gitignore
