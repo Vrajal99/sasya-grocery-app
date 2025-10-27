@@ -6,7 +6,7 @@ export const addAddress = async (req, res) => {
   try {
     const userId = req.userId;
     const { address } = req.body;
-    console.log(address, userId);
+
     await Address.create({ ...address, userId });
     res.json({ success: true, message: "Address added successfully" });
   } catch (error) {
