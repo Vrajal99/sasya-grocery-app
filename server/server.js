@@ -23,7 +23,10 @@ await connectCloudinary();
 app.post("/stripe", express.raw({ type: "application/json" }), stripeWebhooks);
 
 //Allow multiple origins
-const allowedOrigins = ["http://localhost:5173"];
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://sasyagrocers.vercel.app",
+];
 
 // Middleware configuration
 app.use(express.json());
