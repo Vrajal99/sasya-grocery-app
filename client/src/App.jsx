@@ -18,6 +18,7 @@ import AddProduct from "./pages/seller/AddProduct";
 import Orders from "./pages/seller/Orders";
 import ProductList from "./pages/seller/ProductList";
 import Loading from "./components/Loading";
+import PageNotFound from "./pages/PageNotFound";
 
 const App = () => {
   const isSellerPath = useLocation().pathname.includes("seller");
@@ -51,7 +52,7 @@ const App = () => {
           </Route>
 
           {/* Wildcard route for 404 Not Found */}
-          <Route path="*" element={<div>404 - Page Not Found</div>} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </div>
       {!isSellerPath && <Footer />}
